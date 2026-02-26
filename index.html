@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="toggle-btn" id="themeBtn">🌙</button>
+
+  <div class="container">
+    <h1>🎬 Cine Search</h1>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Digite o nome...">
+      
+      <select id="typeSelect">
+        <option value="">Todos</option>
+        <option value="movie">Filme</option>
+        <option value="series">Série</option>
+        <option value="episode">Episódio</option>
+      </select>
+
+      <button id="searchBtn">Buscar</button>
+    </div>
+
+    <div id="historyContainer" class="history"></div>
+
+    <div id="moviesContainer" class="cards-container"></div>
+
+    <div class="pagination">
+      <button id="prevBtn">Anterior</button>
+      <span id="pageInfo"></span>
+      <button id="nextBtn">Próxima</button>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
